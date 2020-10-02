@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  </head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">New York Times Search</h1>
+            <h1 class="display-4">New York Times Search</h1>
         </div>
-      </div>
-      <div class="card">
+    </div>
+    <div class="card">
         <div class="card-header">
-          Featured
+            Featured
         </div>
         <div class="card-body">
-          
-          <div class="form-group">
-            <label for="input1">Search Term:</label>
-            <input type="email" class="form-control" id="input1" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="input2">Number Of Records to Retrieve:</label><br>
-            <select class="custom-select" id="inputGroupSelect01">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="input3">Start Year(Optional):</label>
-            <input type="email" class="form-control" id="input3" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="input4">End Year(Optional):</label>
-            <input type="email" class="form-control" id="input4" aria-describedby="emailHelp">
-          </div>
-          <a href="#" class="btn btn-primary">search</a>
-          <a href="#" class="btn btn-primary">clear Results</a>
+
+            <div class="form-group">
+                <label for="input1">Search Term:</label>
+                <input type="email" class="form-control" id="input1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="input2">Number Of Records to Retrieve:</label><br>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option value=""></option>
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input3">Start Year(Optional):</label>
+                <input type="email" class="form-control" id="input3" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="input4">End Year(Optional):</label>
+                <input type="email" class="form-control" id="input4" aria-describedby="emailHelp">
+            </div>
+            <a href="#" class="btn btn-primary">search</a>
+            <a href="#" class="btn btn-primary">clear Results</a>
 
         </div>
-      </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Top Articles
+        </div>
+        <div class="card-body">
+
+        </div>
+    </div>
 </body>
+
 </html>
