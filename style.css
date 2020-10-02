@@ -3,6 +3,13 @@
     text-align: center;
 }
 
-.button {
+.btn {
+    background-color: #571c1c;
+    color: white;
     
+}
+
+.card-header {
+    background-color: #8a6022;
+    color: white;
 }
